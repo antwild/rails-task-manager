@@ -4,7 +4,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Staatliches');
 
 body {
-  background-color: #EEE;
+  // background-color: #EEE;
+  background: linear-gradient(to right, #d9a7c7, #fffcdc);
   font-family: 'Lato', cursive;
 }
 
@@ -15,11 +16,27 @@ body {
 
 .content {
   text-align: center;
+  border: 3px solid #BBB;
+  border-radius: 3px;
+  padding: 50px 80px;
+  width: 25%;
+  margin: 0 auto;
+  background-color: #F7ECE1;
+  box-shadow: 1px 1px 10px #FFF;
+}
+
+i {
+  text-align: right;
+}
+
+i:hover {
+  color: #E70D00;
 }
 
 #title {
+  text-align: center;
   font-family: 'Staatliches', cursive;
-  display: inline-block;
+  margin-bottom: 10px;
 }
 
 a {
@@ -27,23 +44,50 @@ a {
   color: gold;
 }
 
+.buttons-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
 .task-name {
   background-color: #297373;
   padding: 10px 20px;
   border-radius: 2px;
   box-shadow: 1px 1px 10px #AAA;
-  width: 50%;
   margin: 0 auto;
+}
+
+.task-name:hover {
+  color: #F2F3D9;
+  background-color: #6BAB90;
+  transition: 0.3s;
+}
+
+.head-bin {
+  display: flex;
+  align-items: center;
+}
+
+.bin {
+  color: #994A57;
+  font-size: medium;
 }
 
 .link {
   color: #297373;
   background-color: gold;
   border: 1px solid #297373;
-  padding: 10px 20px;
+  padding: 10px 40px;
   border-radius: 2px;
   box-shadow: 1px 1px 10px #AAA;
-  margin-top: 10px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.link:hover {
+  background-color: #D0B000;
+  transition: 0.3s;
 }
 
 p {
