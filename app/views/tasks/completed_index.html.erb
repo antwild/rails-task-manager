@@ -5,7 +5,6 @@
     <% @tasks.each do |task| %>
       <% if task.completed == true %>
         <h2 class="task-name"><%= link_to task.title, task_path(task) %></h2>
-        <!-- <p><strong>Completed?</strong> <%= task.completed ? '✅' : '❌' %></p> -->
       <% end %>
     <% end %>
 
