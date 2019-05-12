@@ -34,6 +34,10 @@ class TasksController < ApplicationController
     redirect_to tasks_path
   end
 
+  def completed_index
+    @tasks = Task.all
+  end
+
 
   private
 

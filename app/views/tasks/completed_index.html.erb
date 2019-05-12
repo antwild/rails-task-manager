@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="content">
+    <h1 id="title">Task List</h1>
+
+    <% @tasks.each do |task| %>
+      <% if task.completed == true %>
+        <h2 class="task-name"><%= link_to task.title, task_path(task) %></h2>
+        <!-- <p><strong>Completed?</strong> <%= task.completed ? '✅' : '❌' %></p> -->
+      <% end %>
+    <% end %>
+
+  </div>
+</div>

@@ -1,8 +1,12 @@
-<h1>Task List</h1>
+<div class="container">
+  <div class="content">
+    <h1 id="title">Task List</h1>
 
-<% @tasks.each do |task| %>
-  <h2><%= link_to task.title, task_path(task) %></h2>
-  <p><strong>Completed?</strong> <%= task.completed ? '✅' : '❌' %></p>
-<% end %>
+    <% @tasks.each do |task| %>
+      <h2 class="task-name"><%= link_to task.title, task_path(task) %></h2>
+      <p><strong>Completed?</strong> <%= task.completed ? '✅' : '❌' %></p>
+    <% end %>
 
-<%= link_to "Create new task", tasks_new_path %>
+    <%= link_to "Create new task", new_task_path, class: "link" %>
+  </div>
+</div>

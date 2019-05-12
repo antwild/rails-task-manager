@@ -1,3 +1,51 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Lato|Staatliches');
+
+body {
+  background-color: #EEE;
+  font-family: 'Lato', cursive;
+}
+
+.container {
+  width: 80vw;
+  margin: 30px auto;
+}
+
+.content {
+  text-align: center;
+}
+
+#title {
+  font-family: 'Staatliches', cursive;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: gold;
+}
+
+.task-name {
+  background-color: #297373;
+  padding: 10px 20px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 10px #AAA;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.link {
+  color: #297373;
+  background-color: gold;
+  border: 1px solid #297373;
+  padding: 10px 20px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 10px #AAA;
+  margin-top: 10px;
+}
+
+p {
+  margin-bottom: 30px;
+}
